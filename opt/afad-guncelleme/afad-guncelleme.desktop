@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Categories=Network;Application;
+Name=Afad - VPN
+Comment=Afad VPN Uygulaması openconnect
+Exec=/opt/afad/afad-vpn.sh
+Icon=network-workgroup
+Path=
+Terminal=true
+StartupNotify=false
