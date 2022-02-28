@@ -5,16 +5,14 @@
 #####################################################################################
 #####################################################################################
 #####################################################################################
-cd /opt/afad-guncelleme
-cp afad-guncelleme.desktop /usr/share/applications/
-cp afad-guncelleme.sh /opt/afad/
-chmod 777 /opt/afad-guncelleme
-chmod 755 /opt/afad-guncelleme/19to21.sh
-chmod 755 /opt/afad/afad-guncelleme.sh
-############ Normal kullanıcılara guncelleme Çalıştırma yetkisi ############################
+cd /opt/afad-pardus-yukseltme
+cp afad-pardus-yukseltme.desktop /usr/share/applications/
+chmod 777 /opt/afad-pardus-yukseltme/afad-pardus-yukseltme.sh
+chmod 755 /opt/afad-pardus-yukseltme/19to21.sh
+############ Normal kullanıcılara pardus-yukseltme Çalıştırma yetkisi ############################
 sudoers_file1=$(less /etc/sudoers |grep 19to21.sh | wc -l)
 if [ "$sudoers_file1" -lt "1" ] ; then
-echo 'ALL ALL= NOPASSWD: /opt/afad-guncelleme/19to21.sh' | sudo EDITOR='tee -a' visudo
+echo 'ALL ALL= NOPASSWD: /opt/afad-pardus-yukseltme/19to21.sh' | sudo EDITOR='tee -a' visudo
 else 
 echo sudoers-ok
 fi

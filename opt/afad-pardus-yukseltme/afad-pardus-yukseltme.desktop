@@ -2,9 +2,9 @@
 Version=1.0
 Type=Application
 Categories=Network;Application;
-Name=Afad - Guncelleme
-Comment=Afad Guncelleme Uygulaması
-Exec=/opt/afad/afad-guncelleme.sh
+Name=Afad - pardus-yukseltme
+Comment=Afad pardus-yukseltme Uygulaması
+Exec=/opt/afad-pardus-yukseltme/afad-pardus-yukseltme.sh
 Icon=mintupdate
 Path=
 Terminal=true

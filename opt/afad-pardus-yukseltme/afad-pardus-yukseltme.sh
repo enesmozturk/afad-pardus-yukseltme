@@ -61,8 +61,8 @@ if [ "$pardus_version" == "$str2" ] ; then
 #if [ "$str1" == "$str2" ]; then
 echo "Pardus Sürümünüz $pardus_version . Yükseltme işlemine başlamak için Enter tuşuna basınız" 
 read -p "Press any key to continue"
-#sudo /opt/afad-guncelleme/19to21.sh && echo ok1;
-sudo sh -c "$(wget -O- https://depo.afad.gov.tr/afad/talepler/19to21.sh)" && echo ok1;
+sudo /opt/afad-guncelleme/19to21.sh && echo ok1;
+#sudo sh -c "$(wget -O- https://depo.afad.gov.tr/afad/talepler/19to21.sh)" && echo ok1;
 else 
 echo "Pardus Sürümünüz $pardus_version . Pardus sürümünüz 19.5 olmadığı için yükseltme başlamıyor."
 read -p "Çıkmak için  bir tuşa basın."
