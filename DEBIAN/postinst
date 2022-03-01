@@ -10,9 +10,9 @@ cp afad-pardus-yukseltme.desktop /usr/share/applications/
 chmod 777 /opt/afad-pardus-yukseltme/afad-pardus-yukseltme.sh
 chmod 755 /opt/afad-pardus-yukseltme/19to21.sh
 ############ Normal kullanıcılara pardus-yukseltme Çalıştırma yetkisi ############################
-sudoers_file1=$(less /etc/sudoers |grep 19to21.sh | wc -l)
+sudoers_file1=$(less /etc/sudoers |grep afad-pardus-yukseltme.sh | wc -l)
 if [ "$sudoers_file1" -lt "1" ] ; then
-echo 'ALL ALL= NOPASSWD: /opt/afad-pardus-yukseltme/19to21.sh' | sudo EDITOR='tee -a' visudo
+echo 'ALL ALL= NOPASSWD: /opt/afad-pardus-yukseltme/afad-pardus-yukseltme.sh' | sudo EDITOR='tee -a' visudo
 else 
 echo sudoers-ok
 fi

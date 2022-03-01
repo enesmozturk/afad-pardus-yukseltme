@@ -2,9 +2,9 @@
 Version=1.0
 Type=Application
 Categories=Network;Application;
-Name=Afad - pardus-yukseltme
-Comment=Afad pardus-yukseltme Uygulaması
-Exec=/opt/afad-pardus-yukseltme/afad-pardus-yukseltme.sh
+Name=Afad - Pardus - Yükseltme
+Comment=Afad Pardus Yukseltme Uygulaması
+Exec=sudo /opt/afad-pardus-yukseltme/afad-pardus-yukseltme.sh
 Icon=mintupdate
 Path=
 Terminal=true
